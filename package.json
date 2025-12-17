@@ -1,9 +1,9 @@
 {
-  "name": "tubao-blog",
+  "name": "zephyr-blog",
   "type": "module",
   "version": "1.0.0",
-  "description": "This tubao-blog is built with Vuepress-theme-plume!",
-  "author": "szhien <2232432088@qq.com>",
+  "description": "This blog is built with Vuepress-theme-plume!",
+  "author": "Zephyr-Shane <2232432088@qq.com>",
   "license": "MIT",
   "engines": {
     "node": "^18.20.0 || >=20.0.0"

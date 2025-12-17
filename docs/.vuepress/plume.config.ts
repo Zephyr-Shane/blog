@@ -18,7 +18,7 @@ export default defineThemeConfig({
       avatar:
         //   "https://img.keaitupian.cn/newupload/10/1728632305951487.png",
       "https://tse3-mm.cn.bing.net/th/id/OIP-C.fIuv1OoksFyYE3c_THBCAAAAAA?rs=1&pid=ImgDetMain",
-    name: "Szhien",
+    name: "Zephyr-Shane",
     description: "我自为我",
     circle: true,
     location: "zhejiang,China",
@@ -28,7 +28,7 @@ export default defineThemeConfig({
   navbar,
   notes,
   social: [
-    { icon: "github", link: "https://github.com/szhien" },
+    { icon: "github", link: "https://github.com/Zephyr-Shane" },
     { icon: "qq", link: "https://im.qq.com/" },
   ],
 

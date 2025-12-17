@@ -12,7 +12,7 @@ config:
     full: true
     background: tint-plate
     hero:
-      name: Szhien
+      name: Zephyr-Shane
       tagline: 我自为我之 Backend Developer
       text: 欢迎来到我的博客，这里记录了我的一些学习心得和项目经验。
       actions:
@@ -23,5 +23,5 @@ config:
         -
           theme: brand
           text: Github →
-          link: https://github.com/szhien
+          link: https://github.com/Zephyr-Shane
 ---

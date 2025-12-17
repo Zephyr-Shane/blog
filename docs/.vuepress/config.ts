@@ -3,10 +3,10 @@ import { defineUserConfig } from "vuepress";
 import { plumeTheme } from "vuepress-theme-plume";
 
 export default defineUserConfig({
-  base: "/tubao-blog/",
+  base: "/blog/",
   lang: "zh-CN",
-  title: "Szhien's Blog",
-  description: "This tubao-blog is built with Vuepress-theme-plume!",
+  title: "Zephyr's Blog",
+  description: "This zephyr-blog is built with Vuepress-theme-plume!",
 
   bundler: viteBundler(),
 
