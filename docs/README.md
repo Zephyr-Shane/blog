@@ -1,5 +1,5 @@
 ---
-pageLayout: home
+pageLayout: 'home'
 externalLinkIcon: true
 config:
   -

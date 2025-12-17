@@ -1,11 +1,11 @@
 import { defineNavbarConfig } from "vuepress-theme-plume";
 
 export const navbar = defineNavbarConfig([
-  {
-    text: "首页",
-    link: "/",
-    icon: "material-symbols:home-outline",
-  },
+  // {
+  //   text: "首页",
+  //   link: "/",
+  //   icon: "material-symbols:home-outline",
+  // },
   {
     text: "博客",
     link: "/blog/",
@@ -35,7 +35,7 @@ export const navbar = defineNavbarConfig([
     text: "笔记",
     icon: "material-symbols:note-outline",
     items: [
-      { text: "示例1", link: "/notes/demo/" },
+      { text: "Mysql", link: "/notes/demo/" },
       { text: "示例2", link: "/notes/test/" },
       { text: "示例3", link: "/notes/study/"},  //导航到这个路径
     ],
