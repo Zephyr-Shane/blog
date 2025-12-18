@@ -1,6 +1,6 @@
 import { defineThemeConfig } from "vuepress-theme-plume";
 import { navbar } from "./navbar";
-import { notes } from "./notes";
+// import { notes } from "./notes";
 
 export default defineThemeConfig({
   logo: "https://p.sda1.dev/29/dc1be6a93a5d0cf5d8d3549d47750901/Avatar.JPG",
@@ -10,12 +10,11 @@ export default defineThemeConfig({
   appearance: "dark",
 
   profile: {
-      avatar:
-      "https://p.sda1.dev/29/dc1be6a93a5d0cf5d8d3549d47750901/Avatar.JPG",
+    avatar:"https://p.sda1.dev/29/dc1be6a93a5d0cf5d8d3549d47750901/Avatar.JPG",
     name: "Zephyr-Shane",
     description: "我自为我",
     circle: true,
-    location: "zhejiang,China",
+    location: "Zhejiang,China",
     organization: "xxx科技有限公司",
   },
 
@@ -25,10 +24,4 @@ export default defineThemeConfig({
     { icon: "github", link: "https://github.com/Zephyr-Shane" },
     { icon: "qq", link: "https://im.qq.com/" },
   ],
-
-  autoFrontmatter: {
-    permalink: true,
-    createTime: true,
-    title: true,
-  },
 });

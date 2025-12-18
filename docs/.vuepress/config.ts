@@ -1,6 +1,7 @@
 import { viteBundler } from "@vuepress/bundler-vite";
 import { defineUserConfig } from "vuepress";
 import { plumeTheme } from "vuepress-theme-plume";
+import collections from './collections/index.ts'
 
 export const copyright = 
   '© ' +
@@ -28,6 +29,22 @@ export default defineUserConfig({
   bundler: viteBundler(),
   
   theme: plumeTheme({
+    // 加密
+    encrypt: {
+      rules: {
+        // 可以是 md 文件的相对路径，对该文件加密
+        // '前端/基础.md': '123456',
+        // 可以是 文件夹的路径，对该目录下所有文章加密
+        // '/notes/vuepress-theme-plume/': '123456',
+        // 可以是 访问地址的请求路径，对该访问路径下所有文章加密
+        '/resume/': 'zephyr',
+        '/share/': 'zephyr',
+        // 可以是 具体的某个页面的请求路径，对该页面加密
+        // '/article/f8dnci3/': '123456',
+        // 如果是 `^` 开头，则匹配该正则表达式的页面也会加密
+        // '^/(a|b)/': '123456',
+      }
+    },
     // 评论
     // comment: {
     //   // 服务提供商
@@ -47,7 +64,8 @@ export default defineUserConfig({
     changelog: true,
     plugins: {
       // 如果您在此处直接声明为 true，则表示开发环境和生产环境都启用该功能
-      git: process.env.NODE_ENV === 'production'
+      // git: process.env.NODE_ENV === 'production'
+      git: true
     },
 
     autoFrontmatter: {
@@ -65,47 +83,7 @@ export default defineUserConfig({
       creation: "original",
       license: "MIT",
     },
-    collections: [
-      {
-        type: "post",
-        dir: "blog",
-        title: "博客",
-        postList: true, // 启用文章列表页
-        // autoFrontmatter: {
-        //   title: true, // 自动生成标题
-        //   createTime: true, // 自动生成创建时间
-        //   permalink: true, // 自动生成永久链接
-        //   // transform: (data, context, locale) => { // 自定义转换
-        //   //   data.foo ??= 'foo'
-        //   //   return data
-        //   // }
-        // },
-        // profile: {
-        //   avatar: '/avatar.jpg', // 头像路径
-        //   name: '张三', // 显示名称
-        //   description: '个人简介', // 简介文本
-        //   circle: true, // 圆形头像
-        //   location: '广州', // 所在地
-        //   organization: '组织名称', // 所属组织
-        //   layout: 'right', // 布局位置 left|right
-        // },
-        link: "/blog/", // 列表页链接
-        // linkPrefix: '/blog/', // 文章链接前缀
-        // tags: true, // 启用标签页
-        // tagsLink: '/blog/tags/', // 标签页链接
-        // tagsTheme: 'colored', // 标签主题 colored|gray|brand
-        // tagsText: '标签', // 标签页标题
-        // archives: true, // 启用归档页
-        // archivesLink: '/blog/archives/', // 归档页链接
-        // archivesText: '归档', // 归档页标题
-        // categories: true, // 启用分类页
-        // categoriesLink: '/blog/categories/', // 分类页链接
-        // categoriesText: '分类', // 分类页标题
-        // categoriesExpand: 'deep', // 分类展开层级 number|'deep'
-        // categoriesTransform: categories => categories, // 分类转换函数
-      },
-      { type: "doc", dir: "test", title: "笔记" },
-    ],
+    collections: collections,
     // footer: {
     //   message: '',
     //   copyright: copyright,
