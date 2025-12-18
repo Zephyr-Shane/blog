@@ -36,13 +36,59 @@ export const navbar = defineNavbarConfig([
     link: "/about/",
     icon: "material-symbols:airline-seat-flat",
   },
+  // {
+  //   text: "笔记",
+  //   icon: "material-symbols:note-outline",
+  //   items: [
+  //     { text: "Mysql", link: "/notes/demo/" },
+  //     { text: "示例2", link: "/notes/test/" },
+  //     { text: "示例3", link: "/notes/study/" }, //导航到这个路径
+  //   ],
+  // },
   {
-    text: "笔记",
-    icon: "material-symbols:note-outline",
+    text: '分享',
+    icon: 'mdi:idea',
     items: [
-      { text: "Mysql", link: "/notes/demo/" },
-      { text: "示例2", link: "/notes/test/" },
-      { text: "示例3", link: "/notes/study/" }, //导航到这个路径
+      {
+        text: '剧场',
+        icon: 'icon-park-solid:theme',
+        items: [
+          {
+            text: '观影',
+            link: 'https://www.gying.net/',
+            icon: 'mdi:paper-airplane',
+            // badge: '徽章'
+          },
+          {
+            text: '爱壹帆',
+            link: 'https://www.iyf.tv/',
+            icon: 'mdi:paper-airplane',
+
+          },
+        ],
+      },
+      {
+        text: '乐吧',
+        icon: 'mingcute:plugin-2-fill',
+        badge: { text: '徽章', type: 'warning' },
+        items: [
+          {
+            text: '笒鬼鬼',
+            link: 'http://210.16.176.154/',
+            icon: 'material-symbols:move-selection-down-rounded',
+          },
+          {
+            text: '无损音乐',
+            link: 'https://flac.music.hi.cn/',
+            icon: 'pajamas:feature-flag',
+          },
+        ],
+      },
+      {
+        text: 'BT',
+        icon: 'mingcute:plugin-2-fill',
+        link: 'https://www.1lou.pro/',
+      },
     ],
   },
 ]);
