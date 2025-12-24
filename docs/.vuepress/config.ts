@@ -17,7 +17,7 @@ export const copyright =
 
 
 export default defineUserConfig({
-    base: "/blog/",
+    base: "/",
     lang: "zh-CN",
     // 网站图标
     head: [
