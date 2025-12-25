@@ -2,19 +2,8 @@ import {viteBundler} from "@vuepress/bundler-vite";
 import {defineUserConfig} from "vuepress";
 import {plumeTheme} from "vuepress-theme-plume";
 import collections from './collections/index.ts';
-
-export const copyright =
-    '© ' +
-    new Date().getFullYear() +
-    ' ' +
-    '<a href=https://ifback.com/ target=_blank>ifback.com</a>' +
-    ' ' +
-    '豫公网安备 ' +
-    '<a href=https://www.beian.gov.cn/ target=_blank>41152402000212号</a>' +
-    ' ' +
-    '豫ICP备 ' +
-    '<a href=https://beian.miit.gov.cn/ target=_blank>2021014629号-2</a>'
-
+const __dirname = getDirname(import.meta.url)
+import { getDirname, path } from 'vuepress/utils'
 
 export default defineUserConfig({
     base: "/blog/",
@@ -27,8 +16,11 @@ export default defineUserConfig({
     title: "Zephyr's Blog",
     description: "This zephyr-blog is built with Vuepress-theme-plume!",
     bundler: viteBundler(),
-
     theme: plumeTheme({
+        // 使用主题内置的默认配置
+        llmstxt: true,
+        // seo
+        hostname: 'https://zephyr-shane.github.io/blog/',
         //代码块
         codeHighlighter: {
             themes: {light: 'vitesse-light', dark: 'vitesse-dark'},
@@ -55,7 +47,7 @@ export default defineUserConfig({
             provider: 'Giscus', // "Artalk" | "Giscus" | "Twikoo" | "Waline"
             // 是否默认启用评论
             comment: true,
-            repo: 'Zephyr-Shane/tubao-blog',
+            repo: 'Zephyr-Shane/blog',
             repoId: 'R_kgDONFwxlA',
             category: 'Announcements',
             categoryId: 'DIC_kwDONFwxlM4C0AIc',
@@ -78,7 +70,7 @@ export default defineUserConfig({
         plugins: {
             // 如果您在此处直接声明为 true，则表示开发环境和生产环境都启用该功能
             // git: process.env.NODE_ENV === 'production'
-            git: true
+            git: true,
         },
 
         autoFrontmatter: {
@@ -87,19 +79,29 @@ export default defineUserConfig({
             title: true,
         },
         markdown: {
+            icon: {provider: 'iconify', size: '2em'}, // 默认支持
             mermaid: true,
             chartjs: true,
             // ...
         },
+        // 文章版权
         copyright: {
             author: "Zephyr-Shane",
             creation: "original",
             license: "MIT",
         },
         collections: collections,
-        // footer: {
-        //   message: '',
-        //   copyright: copyright,
-        // },
+        footer: {
+            message: "这是页脚信息",
+            copyright: "Powered by VuePress & vuepress-theme-plume",
+        },
     }),
+
+    // 自定义组件
+    alias: {
+        '@theme/layouts/NotFound.vue': path.resolve(
+            __dirname,
+            './theme/layouts/NotFound.vue',
+        ),
+    },
 });
