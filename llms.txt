@@ -1,0 +1,42 @@
+# Zephyr's Blog
+
+> This zephyr-blog is built with Vuepress-theme-plume!This file contains links to all documentation sections.
+
+## Table of Contents
+
+### 博客
+
+
+### 破解
+
+
+### 软件
+
+- [软件](/blog/software/index.md)
+- [软件1](/blog/software/1/index.md)
+- [软件2](/blog/software/2/index.md)
+
+### 软件
+
+
+### Others
+
+- [](/blog/index.md)
+- [关于我](/blog/about/index.md)
+- [破解](/blog/crack/index.md)
+- [jetbrains【2025最新版】](/blog/crack/jetbrains/index.md)
+- [jetbrains【2025最新版】1](/blog/crack/jetbrains1/index.md)
+- [无头浏览器渲染Option并生成图片](/blog/external/ovupif90/index.md)
+- [友情链接](/blog/friends/index.md): 欢迎👏加入！
+- [图库](/blog/gallery/index.md)
+- [JDK多版本控制【Windows】](/blog/java/jdk/version-control/index.md)
+- [Java进阶路线](/blog/java/pzyum7vs/index.md)
+- [MySQL](/blog/notes/interview/mysql/index.md)
+- [自我介绍](/blog/notes/interview/self-introduction/index.md)
+- [给年轻人的面试建议](/blog/notes/interview/suggestion/index.md)
+- [总结是面试的利器](/blog/notes/interview/summary/index.md)
+- [vuepress-theme-plume主题部署](/blog/plume/theme/deployment/index.md)
+- [软件](/blog/share/software/index.md)
+- [软件1](/blog/share/software/1/index.md)
+- [软件2](/blog/share/software/2/index.md)
+- [收藏了一些好玩的网站！](/blog/sites-collect/index.md)

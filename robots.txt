@@ -1,0 +1,3 @@
+Sitemap: https://zephyr-shane.github.io/blog/blog/sitemap.xml
+User-agent:*
+Disallow:
