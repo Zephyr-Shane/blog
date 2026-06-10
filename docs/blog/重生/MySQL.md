@@ -284,7 +284,7 @@ explain / descEXPLAIN SELECT 字段列表 FROM 表名 WHERE 条件 ;
 
 雪花结构如下：
 
-![雪花算法](resources\雪花算法.png)
+![雪花算法](./resources/雪花算法.png)
 
 **固定值：**
 
