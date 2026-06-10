@@ -81,6 +81,14 @@ export default defineUserConfig({
             icon: {provider: 'iconify', size: '2em'}, // 默认支持
             mermaid: true,
             chartjs: true,
+            jsfiddle: true,
+            demo: true,
+            npmTo: true,
+            audioReader: true,
+            chat: true,
+            repl: {
+                go: true,
+            },
         },
         // 文章版权
         copyright: {
@@ -89,7 +97,9 @@ export default defineUserConfig({
             license: "MIT",
         },
         collections: collections,
+        editLinkText: '在 GitHub 上编辑此页',
     }),
+
     // 自定义组件
     alias: {
         '@theme/layouts/NotFound.vue': path.resolve(
@@ -97,4 +107,5 @@ export default defineUserConfig({
             './theme/layouts/NotFound.vue',
         ),
     },
+
 });
