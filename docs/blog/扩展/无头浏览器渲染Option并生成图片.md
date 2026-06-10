@@ -14,7 +14,7 @@ permalink: /external/ovupif90/
 
 下载PhantomJS后，定制渲染图片的接口，返回图片的字节流，单独部署成服务，Java后端直接调用接口。
 
-![部署](images\部署.png)
+![部署](./images/部署.png)
 
 ### 使用命令
 进入目录：
@@ -32,8 +32,8 @@ docker ps
 ### 源码
 [Github仓库](https://github.com/Zephyr-Shane/PhantomJS-Service.git)
 
-![代码目录](images\代码目录.png)
+![代码目录](./images/代码目录.png)
 
-![说明](images\说明.png)
+![说明](./images/说明.png)
 
 ## 参考文章
